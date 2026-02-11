@@ -1,0 +1,64 @@
+version: 2
+
+sources:
+  - name: raw_material
+    description: ""
+    database: dw_base
+    schema: raw_material
+    tables:
+      - name: action_logs
+        description: ""
+      - name: base_curriculars
+        description: ""
+      - name: content_ratings
+        description: ""
+      - name: content_reviewers
+        description: ""
+      - name: content_tags
+        description: ""
+      - name: discipline_types
+        description: ""
+      - name: disciplines
+        description: ""
+      - name: exam_alternative_files
+        description: ""
+      - name: exam_layouts
+        description: ""
+      - name: exam_question_files
+        description: ""
+      - name: exam_repos
+        description: ""
+      - name: exam_subjects
+        description: ""
+      - name: exams
+        description: ""
+      - name: grade_groups
+        description: ""
+      - name: grade_groups_grades
+        description: ""
+      - name: grades
+        description: ""
+      - name: learning_trail_files
+        description: ""
+      - name: learning_trail_repos
+        description: ""
+      - name: learning_trail_subjects
+        description: ""
+      - name: learning_trails
+        description: ""
+      - name: question_contexts
+        description: ""
+      - name: question_subjects
+        description: ""
+      - name: questions
+        description: ""
+      - name: roles
+        description: ""
+      - name: subjects
+        description: ""
+      - name: tag_groups
+        description: ""
+      - name: themes
+        description: ""
+      - name: user_quizzes
+        description: ""
