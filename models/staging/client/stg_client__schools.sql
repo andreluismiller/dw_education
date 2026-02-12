@@ -20,19 +20,16 @@ renamed as (
         END AS status,
         split_part(external_id, '_deleted', 1) as school_external_id,
         created_at,
+        created_at::date AS created_date,
         updated_at,
+        updated_at::date AS updated_date,
         email,
         phone,
         model_menu_id,
-        updated_by,
-        data_confirmation,
+        COALESCE(data_confirmation, false) AS data_confirmation,
         grade_menu_id,
-        disciplines,
-        grade_config,
-        subscription_enabled,
-        subscription_trial_days,
-        subscription_trial_plan,
-        subscription_active_plan
+        COALESCE(subscription_enabled, false) AS subscription_enabled,
+        COALESCE(subscription_trial_days, 30) AS subscription_trial_days
     from source
 )
 select * from renamed
