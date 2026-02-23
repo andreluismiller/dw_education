@@ -2,13 +2,71 @@ sources:
   - name: raw_client
     tables:
       - name: access_logs
+        description: "Logs of user access to the system, including timestamps and user IDs."
+
+        columns:
+          - name: id
+            description: "Unique identifier for each access log entry."
+            data_tests:
+              - not_null
+              - unique
+
+
       - name: activities
+        description: "Clasrroms activities, including description, format, status and deadline."
+
+        columns:
+          - name: id
+            description: "Unique identifier for each activity and classroom."
+            data_tests:
+              - not_null
+              - unique
+
+
       - name: activities_games
+        description: "List of games associated with each activity."
+      
+
       - name: activity_learning_trails
+        description: "General results of learning trails for each activity."
+
+        columns:
+          - name: id
+            description: "Unique identifier for row."
+            data_tests:
+              - not_null
+              - unique
+
+
       - name: activity_users
+        description: "List of students associated with each activity, including participation status and results."
+
+        columns:
+          - name: id
+            description: "Unique identifier for row."
+            data_tests:
+              - not_null
+              - unique
+
+
       - name: base_curriculars
+        description: "Base curriculars codes and associated curriculum."
+
+
       - name: classrooms
+        description: "List of classrooms, including name, code, status and associated school."
+        
+        columns:
+            - name: id
+              description: "Unique identifier for each classroom."
+              data_tests:
+                - not_null
+                - unique
+
+
       - name: classrooms_users
+        description: "List of users associated with each classroom."
+      
       - name: content_tags
       - name: discipline_types
       - name: disciplines
