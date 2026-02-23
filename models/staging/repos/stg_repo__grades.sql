@@ -20,8 +20,8 @@ renamed as (
         , user_map    
         , grade_sequence
         , grade_type
+        , created_at
         , created_at::date AS created_date
-        , updated_at::date AS updated_date
         , status AS status_id
     from source
 )
